@@ -1,0 +1,193 @@
+body{
+    overflow-x: hidden;
+    font-family: "Lato" , sans-serif;
+}
+
+.whatsapp{
+    width: 50px;
+    height: 50px;
+    position:fixed;
+    left: 10px;
+    bottom:20px;
+    z-index: 2;
+    }
+
+img{
+    width:100%;
+    border: 2.5px;
+    border-color: black;
+    border-radius: 8px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #DFD3C3;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidenav a:hover {
+    color: #000000;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.c{
+    position: absolute;
+    text-align: center;
+    font-family: "Sacramento", sans-serif;
+    width: 100%;
+    z-index: 0;
+    width:100%;
+    font-size: 12vw;
+    margin-bottom: 10px;
+    color: rgb(190, 86, 54);
+}
+
+.mm{
+    position: relative;
+    top: 8px;
+    left: 15px;
+    font-size:30px;
+    color:#3C2317;
+}
+
+.title{
+    width:100%;
+    padding-top:35px;
+    font-size: 33px;
+    font-family: sans-serif;
+    font-weight: bold ;
+    text-align: center;
+}
+
+.line_1{
+    position: relative;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grid-container {
+    margin-top: 5%;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.card {
+    border-radius: 14px;
+    width: 100%;
+    padding-bottom: 5px;
+    /*background-color: #CFB997;*/
+}
+  
+.container {
+    border-radius: 7px;
+}
+
+.button_buy2{
+    border-color:rgb(176, 79, 50);
+    border-width: 2px;
+    border-radius: 18px; 
+    color:rgba(184, 77, 77, 0.797);
+    width: 165px;
+    height:  40px;
+    background-color: #ffffff;
+}
+
+.button_buy{
+    display: none;
+}
+
+.ad{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.cm{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.dd{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.ts{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.re{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.dj{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.ip{
+    width:182px;
+    height: 310px;
+}
+  
+.gl{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+  
+.bp{
+    width:182px;
+    height: 310px;
+    object-fit: cover;
+    object-position: center;
+}
+   

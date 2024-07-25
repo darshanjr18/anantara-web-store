@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Anantara | Shop</title>
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="button.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="footer.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="cshop.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="pshop.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .sidenav {
+        display: none;
+        font-size: large;
+      }
+
+      .mm {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar {
+        display: none;
+      }
+    }
+
+    .sidenav {
+      font-family: sans-serif;
+      padding-top: 50px;
+    }
+
+    .sidenav a {
+      padding-top: 20px;
+    }
+
+    .ptitle {
+      font-family: 'Sacramento', sans-serif;
+    }
+
+    .wpcontainer {
+      display: none;
+    }
+
+    .c {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  
+  <div class="wpcontainer" id="wpcontainer">
+    <div class="wpcontainer_head" onclick="closewp()">Hi there!</div>
+    <div class="wpcontainer_text" onclick="closewp()">We are here to help you! Chat with us on whatsapp</div>
+    <div class="wpcontainer_closebtn" onclick="closewp()">X</div>
+    <div class="wpcontainer_wpbtn"><a href="https://api.whatsapp.com/send?phone=919619950489&amp;text=Hi%20team"
+        class="wpcontainer_wplink" target="_blank"><img data-cy="chat-widget-icon" style="width: 24px; height: 24px;"
+          src="https://stkiwiwebdev.z23.web.core.windows.net/assets/svg/whatsapp-icon.svg">
+        &nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="font-size: 16px; font-weight: bold; font-family: Proxima Nova, Open Sans, Helvetica, Arial, sans-serif; letter-spacing: 1.2px;">START
+          CHAT</span></a></div>
+  </div>
+  <a aria-label="Chat on WhatsApp"> <img class="whatsapp" src="watsapp.png" onclick="openwp()" />
+  </a>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html">HOME</a>
+    <a href="shop.html" style="color:black">SHOP</a>
+    <a href="craft.html">OUR CRAFT</a>
+    <a href="contact.html">CONTACT</a>
+  </div>
+  <div id="c" class="c">
+    <span onclick="gotohome()">Anantara</span>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="shop.html" class="active" style="color:black">Shop</a></li>
+      <li><a href="craft.html">Our Craft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <span class="mm" style="font-size:30px;cursor:pointer;color:#3C2317" onclick="openNav()">&#9776;</span>
+  <script>
+    function scrollwin() {
+      window.scrollTo(0, 200);
+    }
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "300px";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    function openwp() {
+      document.getElementById("wpcontainer").style.display = "block";
+    }
+    function closewp() {
+      document.getElementById("wpcontainer").style.display = "none";
+    }
+  </script>
+  <div class='bg'>
+    <div class="title">SHOP</div>
+    <div class="line_1">__</div>
+    <div class="polaroid_1">
+      <img src="earings.png" alt="5 Terre" style="width:100%">
+      <div class="container_p">
+        <a href="earings.html" class="button">
+          <span class="button__text" style="position:relative;margin-left:160px;">EARING</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <button class="button buttonp1" onclick="gotoearing()">
+        EARING
+      </button>
+    </div>
+    <div class="polaroid_2">
+      <img src="rings.png" alt="ear1" style="width:100%">
+      <div class="container_p">
+        <a href="rings.html" class="button">
+          <span class="button__text" style="position:relative;margin-left:160px;">RINGS</span>
+          <div class="button__drow1"></div>
+          <div class="button__drow2"></div>
+        </a>
+      </div>
+      <button class="button buttonp2" onclick="gotoring()">
+        RINGS
+      </button>
+    </div>
+  </div>
+</body>
+<script>
+  function gotohome() {
+    window.location.href = "home.html";
+  }
+
+  function gotoearing() {
+    window.location.href = 'earings.html';
+  }
+
+  function gotoring() {
+    window.location.href = 'rings.html';
+  }
+
+  function openwp() {
+    document.getElementById("wpcontainer").style.display = "block";
+  }
+  function closewp() {
+    document.getElementById("wpcontainer").style.display = "none";
+  }
+</script>
+<footer class="footer">
+  <div class="container" style="margin-top: -50px;padding-left: 85px;">
+    <div class="row">
+      <div class="footer-col"
+        style="margin-left: -100px;margin-top:60px;font-size: 50px;font-family:'Sacramento', sans-serif; color: rgb(188, 76, 42);;font-weight: 0;">
+        <h3>Anantara</h3>
+      </div>
+      <div class="footer-col" style="margin-left: 100px;">
+        <h4>company</h4>
+        <ul style="margin-top: -10px;margin-left:-50px;background-color:#ffffff;">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="craft.html">Craft</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="margin-left:50px;width: 20%;">
+        <h4>get help</h4>
+        <ul style="margin-top: -10px;margin-left:-50px;background-color:#ffffff;display: list-item;">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">paymentoptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="width: 25%;margin-left: 50px;">
+        <h4>follow us</h4>
+        <div class="social-links">
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row"
+    style="padding-top:20px;padding-left:43%;text-align: center; padding-bottom: 20px;margin-bottom: -70px;background-color: rgb(246, 243, 239);">
+    ©2023 By Anantara | All Rights Reserved
+  </div>
+</footer>
+</div>
+<div class="pfooter">
+  <div class="ptitle">
+    Anantara
+  </div>
+  <div class="pfcontainer1">
+    <div>STORE</div>
+    <div style="margin-top: -17px;color:red">____</div>
+    <ul>
+      <li><a href="home.html" style="color: #000000;">Home</a></li>
+      <li><a href="shop.html" style="color: #000000;">Shop</a></li>
+      <li><a href="craft.html" style="color: #000000;">Craft</a></li>
+      <li><a href="contact.html" style="color: #000000;">Contact</a></li>
+    </ul>
+  </div>
+  <div class="pfcontainer2">
+    <div>GET HELP</div>
+    <div style="margin-top: -17px;color:red">____</div>
+    <ul>
+      <li><a href="#" style="color: #000000;">FAQ</a></li>
+      <li><a href="#" style="color: #000000;">returns</a></li>
+      <li><a href="#" style="color: #000000;">order status</a></li>
+      <li><a href="#" style="color: #000000;">payment options</a></li>
+    </ul>
+  </div>
+  <div class="pfcontainer3">
+    <div>FOLLOW US</div>
+    <div style="margin-top: -17px;color:red">____</div>
+    <ul>
+     
+    </ul>
+  </div>
+</div>
+<hr style="font-weight: bolder; color: #000000;">
+<div class="end">
+  ©2023 By Anantara | All Rights Reserved
+</div>
+</html>

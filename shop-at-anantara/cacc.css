@@ -1,0 +1,134 @@
+.c {
+    position: absolute;
+    right: 43%;
+    top: 2px;
+    font-size: 60px;
+    font-family: "Sacramento", sans-serif;
+    color: rgb(148, 61, 35);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    float: right;
+    margin-top: 25px;
+    background-color: #f1e6d2;
+    border-radius: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+}
+
+ul li {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(149, 149, 149);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transition: 0.6s ease;
+
+}
+
+ul li a:hover {
+    color: #000000;
+
+}
+
+ul li.active a {
+    background-color: white;
+    color: black;
+}
+
+.navbar {
+    position: absolute;
+    top: 70px;
+    left: 32%;
+}
+
+.acchold {
+    margin: 170px 350px 0;
+    height: 800px;
+    width: 850px;
+    background-color: rgba(144, 238, 144, 0);
+    z-index: 2;
+}
+
+.displayuser {
+    height: 150px;
+    width: 100%;
+    background-color: #f1e6d2;
+}
+
+p.usrname{
+  position: relative;
+  top:-55px;
+  left: 150px;
+  font-size: 45px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul.acc {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(51, 51, 51, 0);
+    border-radius: 0%;
+    float: left;
+  }
+  
+  li.acc {
+    float: left;
+    padding-left: 5px;
+  }
+  
+  li.acc a {
+    display: block;
+    color: rgb(32, 32, 32);
+    text-align: center;
+    padding: 14px 30px 14px;
+    text-decoration: none;
+  }
+  
+  li.acc a:hover {
+    color: #111;
+    background-color: rgba(243, 236, 236, 0.703);
+  }
+
+  .data{
+    margin-top: 55px;
+    padding: 3px;
+    height: 58%;
+    width: 100%;
+    background-color: aqua;
+  }
+
+  .prof{
+    position: absolute;
+    top: 52%;
+    left: 360px;
+    z-index: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  input[type=text],[type=email],[type=tel]{
+    font-size: 14px;
+    margin: 7px 0 7px;
+    padding: 7px 10px;
+    width: 120%;
+    border: 1px solid rgb(208, 201, 199);
+  }
+  label{
+    font-size: 15px;  
+  }
+  button{
+    padding: 7px 20px 7px;
+    margin-top: 15px;
+    margin-right: 3px;
+    font-size: 15px;
+  }

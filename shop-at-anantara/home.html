@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anantara | Home</title>
+  <script src="https://kit.fontawesome.com/1e5993f2bb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sacramento">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="footer.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="chome.css">
+  <link rel="stylesheet" media="screen and (min-width: 900px)" href="carousel.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="phome.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @media screen and (max-height: 450px) {
+      .sidenav {
+        padding-top: 15px;
+      }
+
+      .sidenav a {
+        font-size: 18px;
+      }
+    }
+
+    @media screen and (min-width: 600px) {
+      .sidenav {
+        display: none;
+        font-size: large;
+      }
+
+      .mm {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar {
+        display: none;
+      }
+
+      .social_links {
+        display: none;
+      }
+    }
+
+    .c {
+      font-family: 'Sacramento', sans-serif;
+      cursor: pointer;
+    }
+
+    .ptitle {
+      font-family: 'Sacramento', sans-serif;
+    }
+
+    .sidenav {
+      font-family: sans-serif;
+      padding-top: 50px;
+    }
+
+    .sidenav a {
+      padding-top: 20px;
+    }
+
+    .showgmailwarning {
+      display: none;
+    }
+
+    .wpcontainer {
+      display: none;
+    }
+
+    .caption-container {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    }
+  </style>
+</head>
+
+<body>
+  <div class="showgmailwarning" id="showgmailwarning">
+    <div class="wlayout">
+    </div><a href="javascript:void(0)" class="closebtnwar" onclick="closeWarning()">X</a><br>
+    <div class="tlayout1">
+      Currently Site is under maintenance!!
+    </div>
+    <div class="tlayout2">
+      *All billing is done through Gmail*
+    </div>
+    <div class="tlayout3">
+      *All billing is done through WhatsApp*
+    </div>
+  </div>
+  <div class="wpcontainer" id="wpcontainer">
+    <div class="wpcontainer_head" onclick="closewp()">Hi there!</div>
+    <div class="wpcontainer_text" onclick="closewp()">We are here to help you! Chat with us on whatsapp</div>
+    <div class="wpcontainer_closebtn" onclick="closewp()">X</div>
+    <div class="wpcontainer_wpbtn"><a href="https://api.whatsapp.com/send?phone=919619950489&amp;text=Hi%20team"
+        class="wpcontainer_wplink" target="_blank"><img data-cy="chat-widget-icon" style="width: 24px; height: 24px;"
+          src="https://stkiwiwebdev.z23.web.core.windows.net/assets/svg/whatsapp-icon.svg">
+        &nbsp;&nbsp;&nbsp;&nbsp;<span
+          style="font-size: 16px; font-weight: bold; font-family: Proxima Nova, Open Sans, Helvetica, Arial, sans-serif; letter-spacing: 1.2px;">START
+          CHAT</span></a></div>
+  </div>
+  <a aria-label="Chat on WhatsApp"> <img class="whatsapp" src="watsapp.png" onclick="openwp()" />
+  </a>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="home.html" style="color:black">HOME</a>
+    <a href="shop.html">SHOP</a>
+    <a href="craft.html">OUR CRAFT</a>
+    <a href="contact.html">CONTACT</a>
+
+    <div>
+    center class 0
+    </div>
+  </div>
+  <div class="c">
+    <span onclick="gotohome()">Anantara</span>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li><a href="home.html" style="color:black">Home</a></li>
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="craft.html">Our Craft</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="social_links">
+    <a href="https://in.pinterest.com/anantarajewells/" style="color: black;"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://in.pinterest.com/anantarajewells/" style="color: black;"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/shop.at.anantara/" style="color: black;"><i class="fab fa-instagram"></i></a>
+    <a href="https://in.pinterest.com/anantarajewells/" style="color: black;"><i class="fab fa-pinterest"></i></a>
+  </div>
+  <div class="mm"><span style="font-size:30px;cursor:pointer;color:#3C2317;margin-left: 10px;top: 124px;"
+      onclick="openNav()">&#9776;</span></div>
+  <div class="g">
+    <div class="grid-container">
+      <div class="item1">
+        <div class="parallax">
+        </div>
+        <div class="textp">
+          NEW WINTER COLLECTION
+        </div>
+        <div>
+          <button class="button buttonp" onclick="gotoshop()">SHOP NOW</button>
+        </div>
+        <div class="sd">
+
+        </div>
+      </div>
+      <div class="item5">
+        <div class="inner-grid">
+          <div class="inner1">
+            <div class="imgholder">
+              <img src="i1.png" style="height: 370px;width:370px;object-fit: cover;">
+            </div>
+            <div class="card_1"
+              style="position:absolute;left:170px;top:970px;font-family: 'Times New Roman', Times, serif;font-size: 24px;font-style: italic;color: #ffffff;">
+              Family Owned</div>
+            <div class="text_card_1"
+              style="position:absolute;left:190px;top:1000px;font-family: sans-serif;color: #ffffff;font-size: 26px;letter-spacing: 4px;">
+              BRAND</div>
+          </div>
+          <div class="inner2">
+            <div class="inner1">
+              <div class="imgholder">
+                <img src="i2.png" style="height: 370px;width:370px;object-fit: cover;">
+              </div>
+            </div>
+            <div class="card_2"
+              style="position:absolute;left:700px;top:970px;font-family: 'Times New Roman', Times, serif;font-size: 24px;font-style: italic;color: #ffffff;">
+              Hand Crafted</div>
+            <div class="text_card_2"
+              style="position:absolute;left:680px;top:1000px;font-family: sans-serif;color: #ffffff;font-size: 26px;letter-spacing: 4px;">
+              PRODUCTS</div>
+          </div>
+          <div class="inner3">
+            <div class="inner1">
+              <div class="imgholder">
+                <img src="i3.png" style="height: 370px;width:370px;object-fit: cover;">
+              </div>
+              <div class="card_3"
+                style="position:absolute;right:190px;top:970px;font-family: 'Times New Roman', Times, serif;font-size: 24px;font-style: italic;color: #ffffff;">
+                Created in</div>
+              <div class="text_card_3"
+                style="position:absolute;right:190px;top:1000px;font-family: sans-serif;color: #ffffff;font-size: 26px;letter-spacing: 4px;">
+                INDIA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid_cont">
+      <div class="grid_i">
+        <div class="h11_1"
+          style="padding-top:130px;margin-right: -265px;padding-left: 125px;background-color: #ffffff;padding-bottom: 145px;">
+          <div class="h13"></div>
+          <button class="button buttonh11" style="top:10px;" onclick="gotoearing()"><span><b>
+                JHUMKA'S</b><br><u><i class="fa-solid fa-indian-rupee-sign"></i>229.00</u></span></button>
+        </div>
+        <div class="h11_2">
+          <div class="h11_2_1">
+          </div>
+          <button class="button buttonh11_2" onclick="gotoshop()">Buy now</button>
+        </div>
+      </div>
+      <div class="grid_i">
+        <div class="parallax_1">
+          <div class="xlink">
+            <a href="earings.html" style="color: #ffffff;">HUDGES EARINGS</a>
+          </div>
+        </div>
+      </div>
+      <div class="nogrid">
+        <div class="h11_2">
+          <div class="h11_2_2">
+          </div>
+          <button class="button buttonh11_2" onclick="gotoshop()">Buy now</button>
+        </div>
+      </div>
+      <div class="grid_i">
+        <div class="parallax_2">
+          <div class="xlink">
+            <a href="earings.html" style="color: #ffffff;">EMRALD EARINGS</a>
+          </div>
+        </div>
+      </div>
+      <div class="grid_i">
+        <div class="h12_1" style="padding-top:130px;padding-bottom: 460px;background-color: #ffffff;">
+          <div class="h12"></div>
+          <button class="button buttonh11" style="top: 315px; margin-left:145px" onclick="gotoearing()"><span><b>DIAMOND
+                LEAF</b><br><u><i class="fa-solid fa-indian-rupee-sign"></i>219.00</u></span></button>
+        </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="item6"
+        style="font-size: 24px;font-family: system-ui;font-weight: 400;padding-top: 70px;padding-bottom: 30px;background-color: rgb(246, 243, 239);">
+        FOLLOW <br>ANANTARA ON INSTAGRAM <br><br> <a href="https://www.instagram.com/shop.at.anantara/"
+          style="font-family:'Times New Roman', Times, serif ;color: #3C2317;font-style: italic; font-size: 28px;">@shop.at.anantara</a>
+        <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <img src="car_1.png" style="width:100%;height: 550px;object-fit: cover;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img src="car_2.png" style="width:100%;height: 550px;object-fit: fill;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img src="car_3.png" style="width:100%;height: 550px;object-fit: fill;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img src="car_4_2.png" style="width:100%;height: 550px;object-fit: fill;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="car_4.png" style="width:100%;height: 550px;object-fit: cover;">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="car_5.jpeg" style="width:100%;height: 550px;object-fit: fill;">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <div class="row">
+            <div class="column">
+              <img class="demo cursor" src="car_1.png" style="width:100%;height: 118.5px;object-fit: cover;"
+                onclick="currentSlide(1)" alt="Earrings">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="car_2.png" style="width:100%" onclick="currentSlide(2)" alt="Rings">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="car_3.png" style="width:100%" onclick="currentSlide(3)" alt="Necklace">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="car_4_2.png" style="width:100%" onclick="currentSlide(4)" alt="Bracelets">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="car_4.png" style="width:100%; height: 118.5px;object-fit: cover;"
+                onclick="currentSlide(5)" alt="pendants">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="car_5.jpeg" style="width:100%;height: 118.5px;" onclick="currentSlide(6)"
+                alt="Hair-Ribbons">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item7">
+      </div>
+    </div>
+    <div class="pfoot">
+      <div class="black" onclick="gotoinsta()">
+
+      </div>
+    </div>
+
+
+    <script>
+
+      function showDiv() {
+        var div = document.getElementById('showgmailwarning');
+        div.style.display = 'block';  
+      }
+      setTimeout(showDiv, 1700);
+      function closeWarning() {
+        var div = document.getElementById('showgmailwarning');
+        div.style.display = 'none';
+      }
+      function openwp() {
+        document.getElementById("wpcontainer").style.display = "block";
+      }
+      function closewp() {
+        document.getElementById("wpcontainer").style.display = "none";
+      }
+      function gotoshop() {
+        window.location.href = "shop.html";
+      }
+      function gotohome() {
+        window.location.href = "home.html";
+      }
+      function gotoearing() {
+        window.location.href = "earings.html";
+      }
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "300px";
+      }
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      function gotoinsta() {
+        window.location.href = "https://www.instagram.com/shop.at.anantara/";
+      }
+      function gotowp() {
+        window.location.href = "https://api.whatsapp.com/send?phone=919619950489";
+      }
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("demo");
+        let captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+
+
+    </script>
+</body>
+<footer class="footer">
+  <div class="container" style="margin-top: -50px;padding-left: 85px;">
+    <div class="row">
+      <div class="footer-col"
+        style="margin-left: -100px;margin-top:60px;font-size: 50px;font-family:'Sacramento', sans-serif; color: rgb(188, 76, 42);;font-weight: 0;">
+        <h3>gemgalaxy</h3>
+      </div>
+      <div class="footer-col" style="margin-left: 100px;">
+        <h4>company</h4>
+        <ul style="margin-top: -10px;margin-left:-50px;background-color:#ffffff;">
+          <li><a href="home.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="craft.html">Craft</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="margin-left:50px;width: 20%;">
+        <h4>get help</h4>
+        <ul style="margin-top: -10px;margin-left:-50px;background-color:#ffffff;display: list-item;">
+          <li><a href="FAQ.html">FAQ</a></li>
+          <li><a href="Returns.html">returns</a></li>
+          <li><a href="#">order status</a></li>
+          <li><a href="#">paymentoptions</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" style="width: 25%;margin-left: 50px;">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="https://in.pinterest.com/anantarajewells/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://in.pinterest.com/anantarajewells/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/shop.at.anantara/"><i class="fab fa-instagram"></i></a>
+          <a href="https://in.pinterest.com/anantarajewells/"><i class="fab fa-pinterest"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="row"
+    style="padding-top:20px;padding-left:43%;text-align: center; padding-bottom: 20px;margin-bottom: -70px;background-color: rgb(246, 243, 239);">
+    ©2023 By gemgalaxy | All Rights Reserved xd
+  </div>
+</footer>
+<div class="pfooter">
+  <div class="ptitle">
+    gemgalaxy
+  </div>
+  <div class="pfcontainer1">
+    <div>STORE</div>
+    <div style="margin-top: -7px;color:red">____</div>
+    <ul>
+      <li><a href="home.html" style="color: #000000;">Home</a></li>
+      <li><a href="shop.html" style="color: #000000;">Shop</a></li>
+      <li><a href="craft.html" style="color: #000000;">Craft</a></li>
+      <li><a href="contact.html" style="color: #000000;">Contact</a></li>
+    </ul>
+  </div>
+  <div class="pfcontainer2">
+    <div>GET HELP</div>
+    <div style="margin-top: -7px;color:red">____</div>
+    <ul>
+      <li><a href="FAQ.html" style="color: #000000;">FAQ</a></li>
+      <li><a href="Return.html" style="color: #000000;">returns</a></li>
+      <li><a href="#" style="color: #000000;">order status</a></li>
+      <li><a href="#" style="color: #000000;">payment options</a></li>
+    </ul>
+  </div>
+  <div class="pfcontainer3">
+    <div>FOLLOW US</div>
+    <div style="margin-top: -7px;color:red">____</div>
+    <ul>
+      <li><a href="https://www.instagram.com/shop.at.anantara/" style="color: #000000;">Facebook</a></li>
+      <li><a href="https://www.instagram.com/shop.at.anantara/" style="color: #000000;">Instagram</a></li>
+      <li><a href="https://in.pinterest.com/anantarajewells/" style="color: #000000;">Pinterest</a></li>
+      <li><a href="https://in.pinterest.com/anantarajewells/" style="color: #000000;">Youtube</a></li>
+    </ul>
+  </div>
+</div>
+<hr style="font-weight: bolder; color: #000000;">
+<div class="end">
+  ©2024 By gemgalaxy| All Rights Reserved xd
+</div>
+
+</html>
